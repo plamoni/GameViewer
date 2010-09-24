@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <title>Loading...</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  	<link href="style.css" rel="stylesheet" type="text/css"/> 
+    <script type="text/javascript" src="swfobject.js"></script>
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="helperfunctions.js"></script>
+    <script type="text/javascript" src="player.js"></script>
+    <script type="text/javascript" src="playlist.js"></script>
+    <script type="text/javascript" src="widgets.js"></script>
+    <script type="text/javascript">
+	function init() {
+		Player.init(playerIsReady, playerHasError, playerStateChanged, playbackQualityChanged);
+		Playlist.init(videoLoaded);
+	}
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="playercontainer">
+	    <div id="matchName">Loading</div>
+    	<div id="status">
+	    	<span id="curGame"></span>
+	    	<span id="curTime"></span>
+    	</div>
+    	<div id="player"><p>Flash Player is Required</p></div>
+    	<div id="quality"></div>
+		<div id="controls">
+		   	<a id="muteButton" onclick="toggleMute()" href="javascript:void(0)">Mute</a>
+		   	<a onclick="Player.skip(-6)" href="javascript:void(0)">&lt;&lt; :06</a>
+		   	<a id="playButton" onclick="togglePause()" href="javascript:void(0)" class="active">Play</a>
+		   	<a onclick="Player.skip(30)" href="javascript:void(0)">:30 &gt;&gt;</a>
+		   	<a onclick="Playlist.nextGame()" href="javascript:void(0)">Next Game</a>
+		</div>
+    </div>
+  </body>
+</html>
