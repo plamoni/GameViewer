@@ -1,0 +1,78 @@
+body {
+	background-color: black;	
+	color: white;
+	font-family:arial,sans-serif;
+	font-size: 12px;
+}
+
+#playercontainer {
+	text-align: center;	
+}
+
+#playercontainer > div {
+	margin: auto;
+}
+
+#player {
+	border: 1px solid #fff;	
+}
+
+#controls {
+	width: 500px;
+	margin: auto;
+}
+
+#controls > a {
+	float: left;
+	display: block;
+	width: 98px;
+	border: 1px solid blue;
+	color: white;
+	text-decoration: none;
+	height: 18px;
+	padding-top: 3px;
+}
+
+#controls > a:hover {
+	background-color: #008;
+}
+
+#quality {
+	width: 300px;
+}
+
+#quality > a {
+	float: left;
+	display: block;
+	width: 98px;
+	border: 1px solid blue;
+	color: white;
+	text-decoration: none;
+	height: 14px;
+	padding-top: 1px;
+}
+
+a.active {
+	background-color: #800;	
+}
+
+#quality > a:hover {
+	background-color: #008;
+}
+
+#matchName {
+	font-size: 24px;	
+}
+
+#status {
+}
+
+#curGame {
+	padding-right: 300px;
+	font-size: 14px;
+}
+
+#curTime {
+	padding-left: 300px;
+	font-size: 14px;
+}
