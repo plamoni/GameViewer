@@ -1,0 +1,25 @@
+GameViewer is designed primarily as a way of viewing eSports that are recorded on YouTube. It is primarily a JavaScript/HTML/CSS application that can be implemented with many different backends. Currently, the application is set up for a Google AppEngine backend. 
+
+The viewer creates a playlist (playlist.js) built off an array (curVids) of YouTube video IDs. Each member of the array represents a "game" while each member of a "game" array should be a YouTube video ID.
+
+Ideally, the curVids array should be populated out of a backend database. This is simply a frontend, not a system unto itself (yet!).
+
+Purpose:
+
+This project was prompted by my aggravation with the current state of eSports videos on Youtube. While the commentaries (such as that done by HuskyStarcraft in the example match) are top-notch, the presentation is frustrating:
+
+-It's hard to find matches
+-There are many spoilers (number of games in a match, number of videos in a game, length of the videos, etc..)
+-The information YouTube's interface emphasizes doesn't really apply to the content (comments, ratings, views, etc).
+
+All of these problems can be solved while still using the exact same YouTube videos. It doesn't even require participation by the creators of the videos (though their input would be VERY much appreciated).
+
+Request for assistance:
+
+I am a JavaScript and CSS nerd. But, as you can surely see from the current state of the project, design is an area where I'm severely deficient. Any design assistance would be very much appreciated.
+
+Example:
+
+I have the application deployed on Google's AppEngine and it can be viewed here:
+
+http://gameviewer.code-freak.com/
