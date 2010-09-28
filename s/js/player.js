@@ -5,7 +5,7 @@ var Player = {
 		Player.onPlayerStateChange = onPlayerStateChange;
 		Player.onVideoPlaybackQualityChange = onVideoPlaybackQualityChange;
 	
-		swfobject.embedSWF("s/wrapper.swf", 
+		swfobject.embedSWF("s/flash/wrapper.swf", 
 		   "player", 
 		   "800", "450", 
 		   "9.0.0",  
